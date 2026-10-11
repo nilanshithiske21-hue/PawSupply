@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#eaf4ff" />
+    <meta name="description" content="PawSupply — thoughtful pet essentials, secure test checkout, and manually verified UPI orders." />
+    <link rel="icon" type="image/svg+xml" href="/pawsupply-mark.svg" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <title>PawSupply — Good days, on paws.</title>
+  </head>
+  <body>
+    <div class="announcement-bar flex items-center justify-center">
+      <span class="announcement-dot" aria-hidden="true"></span>
+      <p>Stripe Checkout is in test mode <span class="announcement-divider">·</span> UPI transfers are manually verified <span class="announcement-divider">·</span> Free shipping</p>
+      <a href="https://trends.google.com/trends/explore?date=today%201-y&amp;q=dog%20food,smart%20pet%20feeder,dog%20grooming" target="_blank" rel="noreferrer">Market notes <span aria-hidden="true">↗</span></a>
+    </div>
+
+    <header class="site-header">
+      <div class="header-main page-shell mx-auto w-full">
+        <a class="brand" href="#/home" data-page="home" aria-label="PawSupply home">
+          <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 44 44" fill="none"><path d="M22 23.5c-5.4 0-10.7 5.4-9.3 10.5 1.1 3.8 5.2 2.2 9.3 1.1 4.2 1.1 8.2 2.7 9.3-1.1 1.5-5.1-3.8-10.5-9.3-10.5Z" fill="currentColor"/><ellipse cx="10.1" cy="18" rx="4.1" ry="5.2" transform="rotate(-24 10.1 18)" fill="currentColor"/><ellipse cx="19.4" cy="12.5" rx="4" ry="5.1" transform="rotate(-7 19.4 12.5)" fill="currentColor"/><ellipse cx="28.8" cy="12.8" rx="4" ry="5.1" transform="rotate(10 28.8 12.8)" fill="currentColor"/><ellipse cx="36" cy="19" rx="4.1" ry="5.2" transform="rotate(25 36 19)" fill="currentColor"/></svg></span>
+          <span class="brand-word">Paw<span>Supply</span></span>
+        </a>
+
+        <div class="header-search">
+          <label class="sr-only" for="site-search">Search products</label>
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><circle cx="10.8" cy="10.8" r="6.8" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <input id="site-search" type="search" placeholder="Find their new favorite…" autocomplete="off" />
+          <kbd aria-hidden="true">⌕</kbd>
+        </div>
+
+        <button class="cart-trigger" id="open-cart" type="button" aria-label="Open shopping cart, 0 items">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="M5 8h14l-1.1 12H6.1L5 8Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 9V6a3 3 0 0 1 6 0v3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          <span class="cart-trigger-label">Your bag</span>
+          <span class="cart-count" id="cart-count" aria-live="polite">0</span>
+        </button>
+      </div>
+
+      <nav class="category-nav page-shell" aria-label="Main navigation">
+        <a class="nav-link nav-link-home" href="#/home" data-page="home" data-nav aria-current="page">Home</a>
+        <a class="nav-link" href="#/shop" data-page="shop" data-nav>All goodies</a>
+        <a class="nav-link" href="#/dogs" data-page="dogs" data-nav>Dogs</a>
+        <a class="nav-link" href="#/cats" data-page="cats" data-nav>Cats</a>
+        <a class="nav-link" href="#/birds" data-page="birds" data-nav>Birds</a>
+        <a class="nav-link" href="#/smart-pet-tech" data-page="tech" data-nav>Smart Pet Tech</a>
+        <a class="nav-link nav-link-orders" href="#/orders" data-page="orders" data-nav>My orders</a>
+        <a class="nav-link nav-link-trends" href="#/trends" data-page="trends" data-nav>Market insights <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero-section page-shell" id="home-hero" aria-labelledby="hero-title">
+        <div class="hero-copy reveal is-visible">
+          <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true">✳</span> THE EVERYDAY PET EDIT</p>
+          <h1 id="hero-title">Good days,<br /><span>on paws.</span></h1>
+          <p class="hero-description">Thoughtful little upgrades for the big personalities who make a house feel like home.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#/shop" data-page="shop" data-scroll-after="#featured">Shop the good stuff <span aria-hidden="true">↗</span></a>
+            <a class="button button-text" href="#featured" data-scroll-target="#featured">Meet the fan favorites <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-proof"><span class="proof-avatars" aria-hidden="true"><i>🐕</i><i>🐈</i><i>🐦</i></span><span>Loved by the whole household</span><span class="proof-stars" aria-hidden="true">★★★★★</span></div>
+        </div>
+        <div class="hero-art reveal is-visible" aria-label="Playful illustrated dog and cat with pet supplies">
+          <div class="hero-orbit orbit-one" aria-hidden="true"></div><div class="hero-orbit orbit-two" aria-hidden="true"></div>
+          <span class="hero-sticker sticker-top" aria-hidden="true">✨ daily<br />delight</span>
+          <img src="/assets/pawsupply-hero.webp" alt="A cheerful corgi and tabby cat sitting among playful pet essentials" fetchpriority="high" />
+          <span class="hero-sticker sticker-bottom" aria-hidden="true"><span>GOOD</span><br />day, ahead</span>
+          <span class="hero-spark spark-one" aria-hidden="true">✦</span><span class="hero-spark spark-two" aria-hidden="true">✳</span>
+        </div>
+        <div class="hero-side-note" aria-hidden="true"><span>GOOD THINGS</span><span>FOR GOOD PETS</span></div>
+      </section>
+
+      <section class="category-strip page-shell" id="home-categories" aria-label="Shop by pet">
+        <div class="category-strip-intro"><span class="mini-eyebrow">PICK THEIR LANE</span><span>Who's getting spoiled?</span></div>
+        <button class="category-tile tile-dog" type="button" data-page="dogs"><span class="tile-icon" aria-hidden="true">🐕</span><span>For dogs</span><span class="tile-arrow" aria-hidden="true">↗</span></button>
+        <button class="category-tile tile-cat" type="button" data-page="cats"><span class="tile-icon" aria-hidden="true">🐈</span><span>For cats</span><span class="tile-arrow" aria-hidden="true">↗</span></button>
+        <button class="category-tile tile-bird" type="button" data-page="birds"><span class="tile-icon" aria-hidden="true">🐦</span><span>For birds</span><span class="tile-arrow" aria-hidden="true">↗</span></button>
+        <button class="category-tile tile-tech" type="button" data-page="tech"><span class="tile-icon" aria-hidden="true">⌁</span><span>Smart pet tech</span><span class="tile-arrow" aria-hidden="true">↗</span></button>
+      </section>
+
+      <section class="category-page page-shell" id="category-page" aria-labelledby="category-page-title" hidden>
+        <nav class="category-breadcrumb" aria-label="Breadcrumb"><a href="#/home" data-page="home">Home</a><span aria-hidden="true">/</span><span id="category-breadcrumb-current">Dogs</span></nav>
+        <div class="category-hero-panel" id="category-hero-panel" data-category-theme="dogs">
+          <div class="category-hero-copy">
+            <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true">✳</span> <span id="category-hero-kicker">DOGS · PLAY · WANDER</span></p>
+            <h1 id="category-page-title">For every<br /><span>good dog.</span></h1>
+            <p id="category-page-description">Walk-ready, nap-approved, and picked for the best friend who goes everywhere with you.</p>
+            <a class="button button-primary" href="#featured" data-scroll-target="#featured">Explore the collection <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="category-hero-art" aria-hidden="true"><div class="category-hero-orbit"></div><div class="category-hero-disc"></div><span class="category-hero-emoji" id="category-hero-emoji">🐕</span><span class="category-hero-sticker" id="category-hero-sticker">GOOD DOG<br />ENERGY</span><span class="category-hero-spark category-spark-one">✦</span><span class="category-hero-spark category-spark-two">✳</span></div>
+          <div class="category-hero-footnote" id="category-hero-footnote">GOOD THINGS, PICKED FOR THEM</div>
+        </div>
+      </section>
+
+      <section id="featured" class="catalog-section section-space" aria-labelledby="catalog-title">
+        <div class="page-shell">
+          <div class="section-heading reveal is-visible"><div><p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true">✳</span> <span id="catalog-eyebrow">THE PAWSUPPLY SHORTLIST</span></p><h2 id="catalog-title"><span id="catalog-title-main">Small things.</span><br /><span id="catalog-title-accent">Big tail wags.</span></h2></div><p class="section-heading-note" id="catalog-description">Well-picked pieces for play, comfort, and the little routines that make their day.</p></div>
+          <div id="products" class="catalog-toolbar">
+            <div class="filter-row" id="filter-row" role="group" aria-label="Browse product collections" hidden>
+              <a class="filter-chip" href="#/shop" data-page="shop" data-nav>All goodies <span id="all-count">8</span></a>
+              <a class="filter-chip" href="#/dogs" data-page="dogs">Dogs</a><a class="filter-chip" href="#/cats" data-page="cats">Cats</a><a class="filter-chip" href="#/birds" data-page="birds">Birds</a><a class="filter-chip" href="#/smart-pet-tech" data-page="tech">Smart Pet Tech</a>
+            </div>
+            <p class="results-count" id="results-count" aria-live="polite">Showing 4 featured finds</p>
+          </div>
+          <div class="product-grid" id="product-grid" aria-live="polite"></div>
+          <div class="empty-results" id="empty-results" hidden><span aria-hidden="true">✧</span><h3>No matches just yet</h3><p>Try another search or give a different category a look.</p><button class="button button-secondary" type="button" id="clear-filters">Show all the goodies</button></div>
+          <div class="catalog-bottom-link" id="catalog-bottom-link" hidden><a href="#/shop" data-page="shop">See the whole collection <span aria-hidden="true">↗</span></a></div>
+        </div>
+      </section>
+
+      <section class="analytics-section section-space" id="analytics" aria-labelledby="trends-title">
+        <div class="page-shell analytics-layout">
+          <div class="analytics-copy reveal"><p class="eyebrow eyebrow-light"><span class="eyebrow-mark" aria-hidden="true">✳</span> THE DATA CORNER</p><h2 id="trends-title">Curiosity,<br /><span>meet a chart.</span></h2><p class="analytics-lede">A little window into what pet people are searching for. Use it as a starting point for the next great idea.</p><div class="source-pill"><span class="source-pulse" aria-hidden="true"></span> GOOGLE TRENDS-STYLE COMPARISON <span class="pill-separator">·</span> SAMPLE INDEX</div><a class="analytics-link" href="https://trends.google.com/trends/explore?date=today%201-y&amp;q=dog%20food,smart%20pet%20feeder,dog%20grooming" target="_blank" rel="noreferrer">Compare these searches in Google Trends <span aria-hidden="true">↗</span></a></div>
+          <div class="analytics-card reveal"><div class="chart-header"><div><p class="mini-eyebrow">SEARCH INTEREST OVER TIME</p><h3>What’s on their minds?</h3></div><span class="chart-period">12-week demo</span></div><div class="chart-legend" role="group" aria-label="Toggle chart series"><button type="button" data-series="food" aria-pressed="true"><i class="legend-dot legend-food"></i>Dog Food</button><button type="button" data-series="feeder" aria-pressed="true"><i class="legend-dot legend-feeder"></i>Smart Feeder</button><button type="button" data-series="grooming" aria-pressed="true"><i class="legend-dot legend-grooming"></i>Grooming</button></div><div class="chart-wrap" id="trend-chart" role="img" aria-label="Illustrative 12-week search-interest sample comparing Dog Food, Smart Feeder, and Grooming. It is not live Google Trends data."></div><div class="chart-footnote"><span aria-hidden="true">ⓘ</span> Illustrative sample index only — not a live Google Trends export. Actual interest varies by region and date.</div></div>
+          <div class="insights-row"><article class="insight-card reveal"><span class="insight-number">01</span><div><h3>Food is the steady baseline</h3><p>In this demo series, Dog Food keeps the strongest broad interest — a useful anchor category to compare against niche ideas.</p></div><span class="insight-icon" aria-hidden="true">↗</span></article><article class="insight-card reveal"><span class="insight-number">02</span><div><h3>Smart feeding is climbing</h3><p>The sample line rises fastest late in the window. Use real regional Trends data to check whether that momentum holds.</p></div><span class="insight-icon" aria-hidden="true">✳</span></article><article class="insight-card reveal"><span class="insight-number">03</span><div><h3>Grooming has little bursts</h3><p>Short peaks can point to seasonal routines — compare several time ranges before choosing what to stock.</p></div><span class="insight-icon" aria-hidden="true">⌁</span></article></div>
+        </div>
+      </section>
+
+      <section class="account-view page-shell" id="orders-view" aria-labelledby="orders-title" hidden>
+        <div class="account-breadcrumb"><span class="mini-eyebrow">YOUR PAWSUPPLY</span></div>
+        <div class="account-heading"><div><p class="eyebrow">ORDER HISTORY</p><h1 id="orders-title">My <span>orders.</span></h1><p>Order details are shown only for receipts saved in this browser.</p></div><a class="button button-secondary" href="#/shop" data-page="shop">Continue shopping <span aria-hidden="true">↗</span></a></div>
+        <div id="orders-content" aria-live="polite"><div class="account-loading">Looking for saved orders…</div></div>
+      </section>
+
+      <section class="account-view page-shell" id="receipt-view" aria-labelledby="receipt-page-title" hidden>
+        <div class="account-breadcrumb"><a href="#/shop" data-page="shop">Continue shopping</a><span aria-hidden="true">/</span><a href="#/orders" data-page="orders">My orders</a></div>
+        <div id="receipt-content" aria-live="polite"><div class="account-loading">Loading your receipt…</div></div>
+      </section>
+
+      <section class="closing-note page-shell reveal" id="closing-note" aria-label="PawSupply promise"><span class="closing-mark" aria-hidden="true">✳</span><p>Good routines start with <span>little moments.</span></p><a href="#/shop" data-page="shop" data-scroll-after="#featured">Back to the goodies <span aria-hidden="true">↑</span></a></section>
+    </main>
+
+    <footer class="site-footer"><div class="page-shell footer-inner">
+      <a class="brand footer-brand" href="#/home" data-page="home" aria-label="PawSupply, home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 44 44" fill="none"><path d="M22 23.5c-5.4 0-10.7 5.4-9.3 10.5 1.1 3.8 5.2 2.2 9.3 1.1 4.2 1.1 8.2 2.7 9.3-1.1 1.5-5.1-3.8-10.5-9.3-10.5Z" fill="currentColor"/><ellipse cx="10.1" cy="18" rx="4.1" ry="5.2" transform="rotate(-24 10.1 18)" fill="currentColor"/><ellipse cx="19.4" cy="12.5" rx="4" ry="5.1" transform="rotate(-7 19.4 12.5)" fill="currentColor"/><ellipse cx="28.8" cy="12.8" rx="4" ry="5.1" transform="rotate(10 28.8 12.8)" fill="currentColor"/><ellipse cx="36" cy="19" rx="4.1" ry="5.2" transform="rotate(25 36 19)" fill="currentColor"/></svg></span><span class="brand-word">Paw<span>Supply</span></span></a>
+      <p>Built with love (and a few treats).</p><p class="footer-disclaimer">Stripe test mode · UPI transfers await manual verification</p><a class="back-top" href="#/home" data-page="home">Back to home ↑</a>
+    </div></footer>
+
+    <div class="toast-region" id="toast-region" role="status" aria-live="polite" aria-atomic="true"></div>
+    <button class="cart-backdrop" id="cart-backdrop" type="button" aria-label="Close cart" hidden></button>
+    <aside class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" aria-hidden="true" inert>
+      <div class="cart-drawer-head"><div><p class="mini-eyebrow">THE GOOD STUFF</p><h2 id="cart-title">Your bag <span id="cart-title-count">(0)</span></h2></div><button type="button" class="icon-button" id="close-cart" aria-label="Close shopping cart">×</button></div>
+      <div class="cart-content" id="cart-content"></div><div class="cart-summary" id="cart-summary"></div>
+    </aside>
+    <dialog class="product-dialog" id="quick-view-dialog" aria-labelledby="quick-view-title"><div class="dialog-inner" id="quick-view-content"></div></dialog>
+    <dialog class="product-dialog checkout-dialog" id="checkout-dialog" aria-labelledby="checkout-title"><div class="dialog-inner" id="checkout-content"></div></dialog>
+    <script type="module" src="/src/app.js"></script>
+  </body>
+</html>

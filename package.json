@@ -1,0 +1,26 @@
+{
+  "name": "pawsupply-storefront",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "pnpm run styles && node dev.js",
+    "styles": "tailwindcss --input ./src/input.css --output ./src/styles.css --minify",
+    "build": "pnpm run styles && vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 3000 --strictPort",
+    "check": "node --check src/app.js && node --check shared/products.js && node --check server.js && node --check server/db.js && node --check server/payments.js && node --check dev.js && pnpm run build"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "4.3.3",
+    "tailwindcss": "4.3.3",
+    "vite": "8.3.3"
+  },
+  "dependencies": {
+    "mysql2": "3.24.5",
+    "stripe": "23.0.0"
+  }
+}
